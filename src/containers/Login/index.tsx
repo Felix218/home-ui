@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import Styled from "./styles.css";
 
@@ -6,15 +6,11 @@ interface LoginProps {
   name: string;
 }
 
-const Login: React.SFC<LoginProps> = ({}) => {
-  return (
-    <Styled.LoginPageStyles>
-      <input />
-    </Styled.LoginPageStyles>
-  );
+const Login: React.FC<LoginProps> = () => {
+  return <Styled.LoginPageStyles></Styled.LoginPageStyles>;
 };
 
-const mapStateToProps = state => ({});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = {};
 
