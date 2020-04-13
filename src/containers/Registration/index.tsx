@@ -4,10 +4,19 @@ import Styled from "./styles.css";
 
 interface RegistrationProps {
   name: string;
+  email: string;
+  phone: string;
 }
 
-const Registration: React.SFC<RegistrationProps> = ({}) => {
-  return <Styled.RegistrationPageStyles></Styled.RegistrationPageStyles>;
+const Registration: React.SFC<RegistrationProps> = (props) => {
+  const { name, email, phone } = props;
+  return (
+    <Styled.RegistrationPageStyles>
+      <div className="login-header"></div>
+      <div className="login-content"></div>
+      <div className="login-footer"></div>
+    </Styled.RegistrationPageStyles>
+  );
 };
 
 const mapStateToProps = () => ({});
