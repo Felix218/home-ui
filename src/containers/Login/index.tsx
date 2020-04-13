@@ -6,8 +6,15 @@ interface LoginProps {
   name: string;
 }
 
-const Login: React.FC<LoginProps> = () => {
-  return <Styled.LoginPageStyles></Styled.LoginPageStyles>;
+const Login: React.FC<LoginProps> = (props) => {
+  const { name } = props;
+  return (
+    <Styled.LoginPageStyles>
+      <div className="login-header"></div>
+      <div className="login-content"></div>
+      <div className="login-footer"></div>
+    </Styled.LoginPageStyles>
+  );
 };
 
 const mapStateToProps = () => ({});

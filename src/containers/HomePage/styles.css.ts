@@ -11,4 +11,15 @@ const HomePageStyles = styled.div`
   }
 `;
 
-export default { HomePageStyles };
+const DashboardStyles = styled.div`
+  #dashboard-header {
+  }
+
+  #dashboard-content {
+  }
+
+  #dashboard-footer {
+  }
+`;
+
+export default { HomePageStyles, DashboardStyles };
